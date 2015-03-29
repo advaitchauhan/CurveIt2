@@ -1,0 +1,6 @@
+<h1>{{ cdept }}</h1>
+<ul>
+{% for course in course_list %}
+    <li> <a href = "/curves/{{ cdept }}/{{ course.num }}/{{ course.semester }}/"> {{ course }}</li>
+{% endfor %}
+</ul>
